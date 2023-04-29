@@ -1,0 +1,11 @@
+<input nz-input placeholder="Basic usage" [(ngModel)]="firstName" />
+<input
+  nz-input
+  placeholder="Basic usage"
+  [(ngModel)]="lastName"
+/>
+<button nz-button nzType="primary" nzShape="circle" (click)="createNew()">+
+</button>
+<div class="user-container">
+  <app-user *ngFor="let user of users" [userData]="user"></app-user>
+</div>
